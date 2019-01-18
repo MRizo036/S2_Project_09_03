@@ -20,7 +20,7 @@ fieldset {
     margin: 10px 0px;
 }
 
-fieldset legend {
+legend {
     background-color: rgb(232, 232, 232);
     width: 100%;
     margin: 2px 0px;
@@ -71,17 +71,20 @@ textarea {
 }
 
 /* Placeholder Styles */
-textarea[placeholder] {
+textarea::-webkit-input-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255 151, 151, blue);
     font-size: 1.5em;
-    -webkit-background-color: rgb(255, 255, 191);
-    -webkit-color: rgb(255 151, 151, blue);
-    -webkit-font-size: 1.5em;
-    -moz-background-color: rgb(255, 255, 191);
-    -moz-color: rgb(255 151, 151, blue);
-    -moz-font-size: 1.5em;
-    -ms-background-color: rgb(255, 255, 191);
-    -ms-color: rgb(255 151, 151, blue);
-    -ms-font-size: 1.5em;
+}
+
+textarea::-moz-placeholder {
+    background-color: rgb(255, 255, 191);
+    color: rgb(255 151, 151);
+    font-size: 1.5em;
+}
+
+textarea::-ms-input-placeholder {
+    background-color: rgb(255, 255, 191);
+    color: rgb(255 151, 151, blue);
+    font-size: 1.5em;
 }

@@ -14,7 +14,7 @@
       Filename:   index.html
 
    -->
-
+    <!-- The script element below allows for javascript functions to be applied to the webpage, allowing for users to interact with the forms created in a specified manner.  -->
     <meta charset="utf-8" />
     <title>CSS Styles Demo</title>
     <link href="wm_reset.css" rel="stylesheet" />
@@ -71,26 +71,33 @@
 
     <section>
         <h1>CSS Demo</h1>
+        <!-- Begginging of web form content. -->
         <form>
+            <!-- The text area element provides a text box on the web page that allows for users to type in the text that they would like. The name attribute provided the name of the field and the id attribute allows for this particular text box to be styles in a different manner, singling it out from other elements. The placeholder attribute placed the text listed within the text box, that text being overwritten when the user beigns typing into the box.  -->
             <textarea name="sampleText" id="sampleBox" placeholder="Enter sample text and press the Tab key" tabindex="1"
                 wrap="hard" autofocus></textarea>
 
             <p>Select the CSS style values from the form below and preview the effect on the sample text in the preview
                 box.</p>
-
+            <!-- Beginning of fieldset one -->
+            <!-- The fieldset element is used in order to group a number of fields that share a common purpose within the form. -->
             <fieldset>
+                <!-- The legend element described the content within the fieldset that it is nested within. -->
                 <legend>Fonts</legend>
+                <!-- The label element associates the text string placed within it with the input that had the same id as it does. The select element provides a field on the page in which a user can select an option from a list of possible values. The option element supply the options that the user will be presented to chose from. -->
                 <label for="fontfamily">Font Family</label>
+                <!-- Beginning of select one. -->
                 <select name="fontfamily" id="fontfamily">
-                    <option value="Default">Default</option>
-                    <optgroup label="Generic">
-                        <option value="Serif">Serif</option>
-                        <option value="Sans-serif">Sans-Serif</option>
-                        <option value="Monospace">Monospace</option>
-                        <option value="Cursive">Cursive</option>
-                        <option value="Fantasy">Fantasy</option>
+                    <option value="default">Default</option>
+                    <!-- The optgroup element groups common options under the label specified.  -->
+                    <optgroup label="generic">
+                        <option value="serif">Serif</option>
+                        <option value="sans-serif">Sans-Serif</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="cursive">Cursive</option>
+                        <option value="fantasy">Fantasy</option>
                     </optgroup>
-                    <optgroup label="Specific">
+                    <optgroup label="specific">
                         <option value="Arial">Arial</option>
                         <option value="‘Book Antiqua’">‘Book Antiqua’</option>
                         <option value="‘Courier New’">‘Courier New’</option>
@@ -102,92 +109,101 @@
                         <option value="‘Times New Roman’">‘Times New Roman’</option>
                     </optgroup>
                 </select>
+                <!-- The comments from above apply to the rest of the elements in this nested within this fieldset. -->
+                <!-- End of select one. -->
 
-                <label for="style">Font Style</label>
-                <select name="fontstyle" id="style">
+                <label for="fontstyle">Font Style</label>
+                <!-- Beginning of select two -->
+                <select name="fontstyle" id="fontstyle">
                     <option value="normal">normal</option>
                     <option value="italic">italic</option>
                     <option value="oblique">oblique</option>
                 </select>
+                <!-- End of select two -->
 
-                <label for="weight">Font Weight</label>
-                <select name="fontweight" id="weight">
+                <label for="fontweight">Font Weight</label>
+                <!--  -->
+                <select name="fontweight" id="fontweight">
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
 
-                <label for="decoration">Text Decoration</label>
-                <select name="textdecoration" id="decoration">
+                <label for="textdecoration">Text Decoration</label>
+                <select name="textdecoration" id="textdecoration">
                     <option value="none">none</option>
                     <option value="line-through">line-through</option>
                     <option value="overline">overline</option>
                     <option value="underline">underline</option>
                 </select>
 
-                <label for="transform">Text Transform</label>
-                <select name="textransform" id="transform">
+                <label for="texttransform">Text Transform</label>
+                <select name="textransform" id="texttransform">
                     <option value="none">none</option>
                     <option value="capitalize">capitalize</option>
                     <option value="lowercase">lowercase</option>
                     <option value="uppercase">uppercase</option>
                 </select>
 
-                <label for="variant">Font Variant</label>
-                <select name="fontvariant" id="variant">
+                <label for="fontvariant">Font Variant</label>
+                <select name="fontvariant" id="fontvariant">
                     <option value="normal">normal</option>
                     <option value="small-caps">small-caps</option>
                 </select>
 
             </fieldset>
-
+            <!-- End of fieldset one. -->
+            <!-- Beginnig of fieldset two -->
             <fieldset>
                 <legend>Colors</legend>
                 <label for="color">Font Color (hexadecimal)</label>
-                <input name="color" id="color" type="color" value="#000000">
+                <input name="color" id="color" type="color" value="#000000" />
 
                 <label for="backgroundcolor">Background Color (hexadecimal)</label>
-                <input name="backgroundcolor" id="backgroundcolor" type="color" placeholder="#rrggbb" value="#FFFFFF">
+                <input name="backgroundcolor" id="backgroundcolor" type="color" placeholder="#rrggbb" value="#FFFFFF" />
             </fieldset>
-
+            <!-- End of fieldset two. -->
+            <!-- Beginning of fieldset three. -->
             <fieldset>
                 <legend>Sizes</legend>
                 <label for="fontsize">Font Size (px)</label>
                 <div class="slider">
                     8
-                    <input name="fontsize" id="fontsize" type="range" value="14" min="8" max="40" step="1">
+                    <input name="fontsize" id="fontsize" type="range" value="14" min="8" max="40" step="1" />
                     40
                 </div>
 
                 <label for="letterspacing">Letter Spacing (px)</label>
                 <div class="slider">
                     0
-                    <input name="letterspacing" id="letterspacing" type="range" value="0" min="0" min="10" step="1">
+                    <input name="letterspacing" id="letterspacing" type="range" value="0" min="0" min="10" step="1" />
                     10
                 </div>
 
                 <label for="wordspacing">Word Spacing (px)</label>
                 <div class="slider">
                     0
-                    <input name="wordspacing" id="wordspacing" type="range" value="0" min="0" max="10" step="1">
+                    <input name="wordspacing" id="wordspacing" type="range" value="0" min="0" max="10" step="1" />
                     10
                 </div>
 
                 <label for="lineheight">Line Height (em)</label>
                 <div class="slider">
                     0
-                    <input name="lineheight" id="lineheight" type="range" value="1" min="0" min="4" step="0.2">
+                    <input name="lineheight" id="lineheight" type="range" value="1" min="0" min="4" step="0.2" />
                     4
                 </div>
 
                 <label for="textindent">Text Indent (px)</label>
                 <div class="slider">
                     0
-                    <input name="textindent" id="textindent" type="range" value="0" min="0" max="10" step="1">
+                    <input name="textindent" id="textindent" type="range" value="0" min="0" max="10" step="1" />
                     10
                 </div>
 
             </fieldset>
+            <!-- End of fieldset three. -->
         </form>
+        <!-- End of web form content. -->
 
 
         <h2>Rendered Text</h2>
