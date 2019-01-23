@@ -84,7 +84,7 @@
             <fieldset>
                 <!-- The legend element described the content within the fieldset that it is nested within. -->
                 <legend>Fonts</legend>
-                <!-- The label element associates the text string placed within it with the input that had the same id as it does. The select element provides a field on the page in which a user can select an option from a list of possible values. The option element supply the options that the user will be presented to chose from. -->
+                <!-- The label element associates the text string placed within it with the input that had the same id as it does. The select element provides a field on the page in which a user can select an option from a list of possible values. The option element supply the options that the user will be presented to chose from. The optgroup allows you to group together various option under a single label -->
                 <label for="fontfamily">Font Family</label>
                 <!-- Beginning of select one. -->
                 <select name="fontfamily" id="fontfamily">
@@ -109,7 +109,7 @@
                         <option value="‘Times New Roman’">‘Times New Roman’</option>
                     </optgroup>
                 </select>
-                <!-- The comments from above apply to the rest of the elements in this nested within this fieldset. -->
+                <!-- The comments from above apply to the rest of the elements in this nested within this fieldset, the only differece being the values, options, names, and ids being written. -->
                 <!-- End of select one. -->
 
                 <label for="fontstyle">Font Style</label>
@@ -153,6 +153,7 @@
             </fieldset>
             <!-- End of fieldset one. -->
             <!-- Beginnig of fieldset two -->
+            <!-- The input element creates a different field within the form that can be filled in by the user. The type attribute states what type of input this field in the form will be represented as, in this case a color picker.  -->
             <fieldset>
                 <legend>Colors</legend>
                 <label for="color">Font Color (hexadecimal)</label>
@@ -163,6 +164,7 @@
             </fieldset>
             <!-- End of fieldset two. -->
             <!-- Beginning of fieldset three. -->
+            <!-- The comment from above applies to the rest of the fieldsets listed below this comment, the only difference being the types of inputs, the ids, and the names.Along with that the range type value provodes the user with a number slider. The max and min attributes state what the range of the slider is.  -->
             <fieldset>
                 <legend>Sizes</legend>
                 <label for="fontsize">Font Size (px)</label>

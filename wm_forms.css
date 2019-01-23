@@ -6,20 +6,23 @@
    Case Problem 3
 
    WidgetMage Form Styles
-   Author: 
-   Date:   
+   Author: Maria De Jesus Rizo
+   Date:   1.15.19
 
    Filename: wm_forms.css
 
 */
 
 /* Field Set Styles */
+/* Styles within this section will be applied to the fieldset elements of the HTML document. */
+/* The selector below states that styles listed will be applied to the fieldset elements. The border property states that the fieldset will not have a border surrounding it. The width attribute states how wide the element will appear on the page when rendered. The margin property applies a margin around the element of the specified dimensions. */
 fieldset {
     border: none;
     width: 60%;
     margin: 10px 0px;
 }
 
+/* The selector below states that the legend element will have a background color of the color specified by the rgb triplet. */
 legend {
     background-color: rgb(232, 232, 232);
     width: 100%;
@@ -27,6 +30,8 @@ legend {
 }
 
 /* DIV Styles */
+/* Styes within this section will be applied to the div elements in the HTML document. */
+/* The selector below states that the div element with a class of slider will be floated to the left of the container it is being nested within. */
 div.slider {
     float: left;
     width: 60%;
@@ -34,6 +39,8 @@ div.slider {
 }
 
 /* Control Styles */
+/* Styles within this section will be applied to the various controls within the HTML documents form. */
+/* The selector below states that the label element in the HTML document will be cleared of all the elements floating to the left of it. The element will then be dloated to the left of its container as specified by the float property. The display property states that the element will have the display properties of a block element. */
 label {
     clear: left;
     float: left;
@@ -42,27 +49,32 @@ label {
     margin: 2px 0px;
 }
 
+/* Styles within this selector will be applied to the input and select elements in the HTMl document. */
 input,
 select {
     margin: 2px 0px;
 }
 
+/* Styles listed below will be applied to the input elements that have a type attribute of range. */
 input[type="range"] {
     width: 60%;
 }
 
+/* The selector below states that the select element will have the properties listed applied to it. */
 select {
     display: block;
     float: left;
     width: 120px;
 }
 
+/* The selector below state that the input element with a type attribute of the value color will have the properties listed applied to it.  */
 input[type="color"] {
     display: block;
     float: left;
     width: 75px;
 }
 
+/* The selector below states that the properties listed will affect the textarea element in the HTMl document. The font size property specifies the size that the text within the textarea should be. The margin bottom property applies a margin to the bottom of the element of the specified size.   */
 textarea {
     font-size: 1.5em;
     width: 100%;
@@ -71,18 +83,21 @@ textarea {
 }
 
 /* Placeholder Styles */
+/* Styles within this section will affect the placeholder within the textarea element. The webkit extension allows for more accessibility between browsers. The color property specifies the font of the placeholder text. */
 textarea::-webkit-input-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255 151, 151, blue);
     font-size: 1.5em;
 }
 
+/* Styles below will affect the placeholder within the textarea. The moz extension allows for accessibility on the mozilla browser. */
 textarea::-moz-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255 151, 151);
     font-size: 1.5em;
 }
 
+/* The selector below states that styles within will be applied to the placeholder within the text area, the ms extension allowsing for compatibility of the styles with a wider range of browsers.  */
 textarea::-ms-input-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255 151, 151, blue);
